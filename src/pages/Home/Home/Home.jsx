@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Container, Title, Subtitle } from "../../../styles/General.styled";
 import Button from "../../../components/Button/Button";
 import { useNavigate } from "react-router-dom";
-import { SfxContext } from "../../../contexts/SfxContext";
+
 
 function Home() {
   const navigate = useNavigate();
