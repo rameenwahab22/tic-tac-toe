@@ -22,7 +22,9 @@ function RoundOverModal() {
         </Title>
       </ModalHeader>
       <ModalBody>
-        <Subtitle primary>Choices will be switched now.</Subtitle>
+        {game.mode !== "cpu" && (
+          <Subtitle primary>Choices will be switched now.</Subtitle>
+        )}
         <Subtitle primary>
           {game.player1.name}: {game.player1.score}
         </Subtitle>
